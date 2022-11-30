@@ -1,0 +1,17 @@
+{
+  "codeowners": ["@xmindpingx"],
+  "config_flow": true,
+  "documentation": "https://github.com/trublud/HAPlants/",
+  "dependencies": ["mqtt"],
+  "after_dependencies": [
+    "recorder",
+    "openplantbook",
+    "integration",
+    "utility_meter"
+  ],
+  "domain": "weed",
+  "iot_class": "cloud_polling",
+  "name": "HaWeed",
+  "requirements": ["gidgethub[aiohttp]==4.1.1"],
+  "version": "1.0.0"
+}

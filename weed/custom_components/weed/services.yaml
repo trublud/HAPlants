@@ -1,0 +1,38 @@
+replace_sensor:
+  description: Replaces an external sensor
+  # target:
+  #   entity:
+  #     domain: plant
+  fields:
+    meter_entity:
+      name: Meter entity
+      description: The meter entity to replace the sensor for
+      example: plant.my_plant_current_temperature
+      required: true
+      selector:
+        entity:
+          domain: sensor
+          integration: plant
+
+    new_sensor:
+      name: Sensor entity
+      description: Entity id of the new sensor. Leave blank to remove sensor.
+      example: sensor.new_temperature_outdoor
+      required: false
+      selector:
+        entity:
+          domain: sensor
+
+set_state:
+  description: Set MQTT state
+  fields:
+    new_state:
+      description: New state of the entity
+      example: "on"
+      
+make_plant:
+  description: make MQTT plant
+  fields:
+    make_plant:
+      description: New plant
+      example: plant
