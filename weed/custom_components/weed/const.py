@@ -1,6 +1,6 @@
 """Constants"""
 
-DOMAIN = "plant"
+DOMAIN = "weed"
 DOMAIN_SENSOR = "sensor"
 DOMAIN_PLANTBOOK = "openplantbook"
 
